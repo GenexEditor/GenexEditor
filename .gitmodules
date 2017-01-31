@@ -1,0 +1,3 @@
+[submodule "ThirdParty/Eto"]
+	path = ThirdParty/Eto
+	url = https://github.com/GenexEditor/Eto.git
