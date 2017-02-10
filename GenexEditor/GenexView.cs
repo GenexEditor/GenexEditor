@@ -25,16 +25,18 @@ namespace GenexEditor
         public void ShowLauncherWindow()
         {
             _launcherWindow.Show();
+
             if (_currentWindow != null)
-                _currentWindow.Close();
+                _currentWindow.Visible = false;
             _currentWindow = _launcherWindow;
         }
 
         public void ShowMainWindow()
         {
             _mainWindow.Show();
+
             if (_currentWindow != null)
-                _currentWindow.Close();
+                _currentWindow.Visible = false;
             _currentWindow = _mainWindow;
         }
 
@@ -42,9 +44,8 @@ namespace GenexEditor
 
         public Tuple<bool, string, string> ShowNewProjectDialog()
         {
-            // TODO: Implement new project dialog
-
-            return Tuple.Create(false, "", "");
+            var dialog = new NewProjectDialog();
+            return dialog.ShowModal(_currentWindow);
         }
 
         public Tuple<bool, string> ShowOpenProjectDialog()

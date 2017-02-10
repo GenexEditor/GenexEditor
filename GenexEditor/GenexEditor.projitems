@@ -22,11 +22,18 @@
       <DependentUpon>LauncherWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\RecentProjectControl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\RecentProjectControl.eto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\RecentProjectControl.eto.cs">
+      <DependentUpon>RecentProjectControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\ExtraSpacing.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dialogs\NewProjectDialog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dialogs\NewProjectDialog.eto.cs">
+      <DependentUpon>NewProjectDialog.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Common\" />
     <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Dialogs\" />
   </ItemGroup>
 </Project>

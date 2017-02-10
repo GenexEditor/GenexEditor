@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 
 namespace GenexEditor
 {
@@ -23,7 +22,7 @@ namespace GenexEditor
 
             if (ret.Item1)
             {
-                var path = Path.Combine(ret.Item2, ret.Item3);
+                var path = Path.Combine(ret.Item2, ret.Item3 + ".gex");
 
                 if (!Directory.Exists(ret.Item2))
                     Directory.CreateDirectory(ret.Item2);
@@ -52,7 +51,6 @@ namespace GenexEditor
             }
 
             _view.ShowMainWindow();
-            _view.ShowLauncherWindow();
         }
     }
 }
