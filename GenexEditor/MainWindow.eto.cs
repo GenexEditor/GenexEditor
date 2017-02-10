@@ -1,8 +1,9 @@
 ﻿using System;
+using Eto.Forms;
 
 namespace GenexEditor
 {
-    partial class MainWindow
+    partial class MainWindow : Form
     {
         private void InitializeComponent()
         {

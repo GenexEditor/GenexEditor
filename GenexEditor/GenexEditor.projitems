@@ -13,9 +13,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\Controller.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\IView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GenexView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MainWindow.eto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainWindow.eto.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LauncherWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LauncherWindow.eto.cs">
+      <DependentUpon>LauncherWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\RecentProjectControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\RecentProjectControl.eto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ExtraSpacing.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Common\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
   </ItemGroup>
 </Project>
