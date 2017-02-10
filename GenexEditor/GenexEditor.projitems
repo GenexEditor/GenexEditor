@@ -10,5 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)MainWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Controller.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\IView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GenexView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainWindow.eto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Common\" />
   </ItemGroup>
 </Project>

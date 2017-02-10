@@ -2,10 +2,11 @@
 
 namespace GenexEditor
 {
-    public class MainWindow : Form
+    partial class MainWindow : Form
     {
         public MainWindow()
         {
+            InitializeComponent();
         }
     }
 }

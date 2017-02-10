@@ -8,9 +8,10 @@ namespace GenexEditor
         public static void Main(string[] args)
         {
             var app = new Application(Platform.Detect);
-            var win = new MainWindow();
+            var view = new GenexView();
 
-            app.Run(win);
+            Controller.Attach(view);
+            app.Run();
         }
     }
 }

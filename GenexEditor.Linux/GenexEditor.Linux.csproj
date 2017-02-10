@@ -42,6 +42,10 @@
       <Project>{543B2F90-CA56-11E3-9C1A-0800200C9A66}</Project>
       <Name>Eto.Gtk3 - net45</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GenexEditor.Core\GenexEditor.Core.csproj">
+      <Project>{2AFB0064-8D49-4180-AB25-2C3630B34C97}</Project>
+      <Name>GenexEditor.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\GenexEditor\GenexEditor.projitems" Label="Shared" Condition="Exists('..\GenexEditor\GenexEditor.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
