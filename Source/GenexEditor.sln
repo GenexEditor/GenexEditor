@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{2E6D0416-49A4-4505-B420-403DBB91DD52}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GenexEditor", "GenexEditor\GenexEditor.shproj", "{CEAE5290-BCAE-4F5D-9FC7-FF3D9E38EDF7}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GenexEditor", "GenexEditor\GenexEditor\GenexEditor.shproj", "{CEAE5290-BCAE-4F5D-9FC7-FF3D9E38EDF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenexEditor.Linux", "GenexEditor.Linux\GenexEditor.Linux.csproj", "{5777C053-FA31-4D32-8C07-11E123773FB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenexEditor.Linux", "GenexEditor\GenexEditor.Linux\GenexEditor.Linux.csproj", "{5777C053-FA31-4D32-8C07-11E123773FB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto - pcl", "ThirdParty\Eto\Source\Eto\Eto - pcl.csproj", "{35EF0A4E-2A1A-492C-8BED-106774EA09F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto - pcl", "..\ThirdParty\Eto\Source\Eto\Eto - pcl.csproj", "{35EF0A4E-2A1A-492C-8BED-106774EA09F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Gtk3 - net45", "ThirdParty\Eto\Source\Eto.Gtk\Eto.Gtk3 - net45.csproj", "{543B2F90-CA56-11E3-9C1A-0800200C9A66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Gtk3 - net45", "..\ThirdParty\Eto\Source\Eto.Gtk\Eto.Gtk3 - net45.csproj", "{543B2F90-CA56-11E3-9C1A-0800200C9A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Wpf - net45", "ThirdParty\Eto\Source\Eto.Wpf\Eto.Wpf - net45.csproj", "{63137FA0-CA55-11E3-9C1A-0800200C9A66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Wpf - net45", "..\ThirdParty\Eto\Source\Eto.Wpf\Eto.Wpf - net45.csproj", "{63137FA0-CA55-11E3-9C1A-0800200C9A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenexEditor.Windows", "GenexEditor.Windows\GenexEditor.Windows.csproj", "{FDBC8259-0C4B-4648-A1DE-06C65D88D330}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenexEditor.Windows", "GenexEditor\GenexEditor.Windows\GenexEditor.Windows.csproj", "{FDBC8259-0C4B-4648-A1DE-06C65D88D330}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenexEditor.Core", "GenexEditor.Core\GenexEditor.Core.csproj", "{2AFB0064-8D49-4180-AB25-2C3630B34C97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenexEditor.Core", "GenexEditor\GenexEditor.Core\GenexEditor.Core.csproj", "{2AFB0064-8D49-4180-AB25-2C3630B34C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

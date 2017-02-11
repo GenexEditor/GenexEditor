@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDBC8259-0C4B-4648-A1DE-06C65D88D330}</ProjectGuid>
+    <ProjectGuid>{5777C053-FA31-4D32-8C07-11E123773FB1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GenexEditor</RootNamespace>
     <AssemblyName>GenexEditor</AssemblyName>
@@ -35,13 +35,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ThirdParty\Eto\Source\Eto\Eto - pcl.csproj">
+    <ProjectReference Include="..\..\..\ThirdParty\Eto\Source\Eto\Eto - pcl.csproj">
       <Project>{35EF0A4E-2A1A-492C-8BED-106774EA09F2}</Project>
       <Name>Eto - pcl</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ThirdParty\Eto\Source\Eto.Wpf\Eto.Wpf - net45.csproj">
-      <Project>{63137FA0-CA55-11E3-9C1A-0800200C9A66}</Project>
-      <Name>Eto.Wpf - net45</Name>
+    <ProjectReference Include="..\..\..\ThirdParty\Eto\Source\Eto.Gtk\Eto.Gtk3 - net45.csproj">
+      <Project>{543B2F90-CA56-11E3-9C1A-0800200C9A66}</Project>
+      <Name>Eto.Gtk3 - net45</Name>
     </ProjectReference>
     <ProjectReference Include="..\GenexEditor.Core\GenexEditor.Core.csproj">
       <Project>{2AFB0064-8D49-4180-AB25-2C3630B34C97}</Project>
