@@ -30,6 +30,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Dialogs\NewProjectDialog.eto.cs">
       <DependentUpon>NewProjectDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\GenexProject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Common\" />

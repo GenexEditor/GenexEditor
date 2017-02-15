@@ -3,6 +3,13 @@ using System.Collections.Generic;
 
 namespace GenexEditor
 {
+    enum Response
+    {
+        Yes,
+        No,
+        Cancel
+    }
+
     interface IView
     {
         // Windows
@@ -25,8 +32,12 @@ namespace GenexEditor
         /// <returns>Directory result, file path.</returns>
         Tuple<bool, string> ShowOpenProjectDialog();
 
+        bool ShowYesNoDialog(string title, string message);
+
+        Response ShowYesNoCancelDialog(string title, string message);
+
         // General
 
-        void ReloadRecentList(List<string> filePaths);
+        void ReloadRecentList(List<RecentItem> items);
     }
 }

@@ -29,6 +29,7 @@ namespace GenexEditor
             if (_currentWindow != null)
                 _currentWindow.Visible = false;
             _currentWindow = _launcherWindow;
+            _currentWindow.BringToFront();
         }
 
         public void ShowMainWindow()
@@ -38,6 +39,7 @@ namespace GenexEditor
             if (_currentWindow != null)
                 _currentWindow.Visible = false;
             _currentWindow = _mainWindow;
+            _currentWindow.BringToFront();
         }
 
         // Dialogs
@@ -60,11 +62,31 @@ namespace GenexEditor
             return Tuple.Create(result, result ? dialog.FileName : "");
         }
 
+        public bool ShowYesNoDialog(string title, string message)
+        {
+            var result = MessageBox.Show(_currentWindow, message, title, MessageBoxButtons.YesNo);
+            return result == DialogResult.Yes;
+        }
+
+        public Response ShowYesNoCancelDialog(string title, string message)
+        {
+            var result = MessageBox.Show(_currentWindow, message, title, MessageBoxButtons.YesNoCancel);
+
+            if (result == DialogResult.Yes)
+                return Response.Yes;
+
+            if (result == DialogResult.No)
+                return Response.No;
+
+            return Response.Cancel;
+        }
+
         // General
 
-        public void ReloadRecentList(List<string> filePaths)
+        public void ReloadRecentList(List<RecentItem> filePaths)
         {
             _launcherWindow.ReloadRecentList(filePaths);
+            _mainWindow.ReloadRecentList(filePaths);
         }
     }
 }

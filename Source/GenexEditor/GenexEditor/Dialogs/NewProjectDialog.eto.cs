@@ -16,8 +16,9 @@ namespace GenexEditor
         {
             // Layouts
             Title = "New Project Dialog";
-            Width = 600;
-            Height = 380;
+            Resizable = true;
+            MinimumSize = new Size(480, 320);
+            Size = new Size(520, 360);
 
             var layout1 = new DynamicLayout();
             {
@@ -93,6 +94,8 @@ namespace GenexEditor
             AbortButton = _buttonCancel;
 
             // Events
+            _entryName.TextChanged += ReloadCreate;
+            _fileLocation.FilePathChanged += ReloadCreate;
             _buttonCancel.Click += ButtonCancel_Click;
             _buttonCreate.Click += ButtonCreate_Click;
         }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using System.Collections.Generic;
 using Eto.Forms;
 
@@ -13,15 +11,14 @@ namespace GenexEditor
             InitializeComponent();
         }
 
-        public void ReloadRecentList(List<string> filePaths)
+        public void ReloadRecentList(List<RecentItem> items)
         {
-            var children = _stackLayout.Children.ToArray();
-            foreach (var child in children)
-                _stackLayout.Remove(child);
+            _stackLayout.RemoveAll();
+            _stackLayout.Clear();
 
-            foreach (var filePath in filePaths)
+            foreach (var item in items)
             {
-                _stackLayout.Add(new RecentProjectControl(Path.GetFileName(filePath), filePath));
+                _stackLayout.Add(new RecentProjectControl(item.Title, item.FilePath));
                 _stackLayout.Add(new Splitter { Orientation = Orientation.Vertical, Enabled = false });
             }
 
@@ -36,13 +33,6 @@ namespace GenexEditor
         private void ButtonOpen_Click(object sender, EventArgs e)
         {
             Controller.OpenProject();
-        }
-
-        private void Drawable1_Paint(object sender, PaintEventArgs e)
-        {
-            var g = e.Graphics;
-
-
         }
     }
 }

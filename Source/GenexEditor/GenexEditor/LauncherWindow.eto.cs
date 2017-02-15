@@ -1,5 +1,4 @@
-﻿using System;
-using Eto.Forms;
+﻿using Eto.Forms;
 using Eto.Drawing;
 
 namespace GenexEditor
@@ -14,8 +13,8 @@ namespace GenexEditor
         {
             // Layout
             Title = "Genex Editor";
-            Width = 800;
-            Height = 440;
+            Size = new Size(800, 440);
+            MinimumSize = new Size(400, 300);
 
             var layout1 = new DynamicLayout();
             layout1.DefaultPadding = new Padding(10);

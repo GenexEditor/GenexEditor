@@ -10,6 +10,16 @@ namespace GenexEditor
         {
             InitializeComponent();
             Result = Tuple.Create(false, "", "");
+            ReloadCreate(this, EventArgs.Empty);
+        }
+
+        private void ReloadCreate(object sender, EventArgs e)
+        {
+            var enabled = true;
+            enabled &= !string.IsNullOrEmpty(_entryName.Text);
+            enabled &= Directory.Exists(_fileLocation.FilePath);
+
+            _buttonCreate.Enabled = enabled;
         }
 
         private void ButtonCancel_Click(object sender, EventArgs e)
